@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    #    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.enable_lazy_load_no_trans: true #Lazy Load ? ???? ?? ??
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sendy_dump_postgres
+    username: ssung
+    password: Sendy12!
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    org:
+      springframework:
+        transaction:
+          interceptor: TRACE
