@@ -2,7 +2,7 @@ spring:
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     #    show-sql: true
     properties:
       hibernate.format_sql: true
@@ -11,9 +11,9 @@ spring:
     database: postgresql
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/sendy_dump_postgres
-    username: ssung
-    password: Sendy12!
+    url: jdbc:postgresql://localhost:5432/sendymain
+    username: postgres
+    password: passw0rd
     driver-class-name: org.postgresql.Driver
 
 logging:
@@ -31,3 +31,4 @@ logging:
       hibernate:
         resource:
           transaction: DEBUG
+        SQL: DEBUG
