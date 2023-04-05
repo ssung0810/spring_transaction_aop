@@ -5,4 +5,5 @@ class JenkinsTest(
     val b: String,
     val c: String
 ) {
+
 }
